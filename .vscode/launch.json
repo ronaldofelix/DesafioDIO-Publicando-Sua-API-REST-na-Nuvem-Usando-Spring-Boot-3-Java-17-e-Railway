@@ -36,8 +36,8 @@
             "env": {
                 "SPRING_PROFILES_ACTIVE": "prd",
                 "PGDATABASE": "railway",
-                "PGHOST": "postgres.railway.internal",
-                "PGPASSWORD": "XwrtHgCsbCqRezyWmSvSIgXqvfArytTs",
+                "PGHOST": "##############",
+                "PGPASSWORD": "##############",
                 "PGPORT": "5432",
                 "PGUSER": "postgres"
             },
