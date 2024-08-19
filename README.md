@@ -8,17 +8,12 @@ classDiagram
         +Date dataNascimento
         +String email
         +List~Disciplina~ disciplinas
-        +void cadastrar()
-        +void atualizar()
-        +void excluir()
     }
 
     class Disciplina {
         +String nome
         +String codigo
         +Professor professor
-        +void adicionarAluno(Aluno aluno)
-        +void removerAluno(Aluno aluno)
     }
 
     class Professor {
@@ -26,16 +21,13 @@ classDiagram
         +String matricula
         +String email
         +List~Disciplina~ disciplinas
-        +void adicionarDisciplina(Disciplina disciplina)
-        +void removerDisciplina(Disciplina disciplina)
     }
 
     class Turma {
         +String codigo
         +Disciplina disciplina
         +List~Aluno~ alunos
-        +void adicionarAluno(Aluno aluno)
-        +void removerAluno(Aluno aluno)
+
     }
 
     Aluno "1" --o "*" Disciplina : "matriculado em"
