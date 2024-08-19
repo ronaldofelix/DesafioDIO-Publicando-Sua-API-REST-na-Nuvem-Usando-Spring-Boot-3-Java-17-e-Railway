@@ -1,0 +1,48 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "SchoolManagementApiApplication",
+            "request": "launch",
+            "mainClass": "me.dio.school_management_api.SchoolManagementApiApplication",
+            "projectName": "school-management-api"
+        },
+        {
+            "type": "java",
+            "name": "Application Dev",
+            "request": "launch",
+            "mainClass": "me.dio.school_management_api.SchoolManagementApiApplication",
+            "env": {
+                "SPRING_PROFILES_ACTIVE": "dev"
+            },
+            "cwd": "${workspaceFolder}",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Application prd",
+            "request": "launch",
+            "mainClass": "me.dio.school_management_api.SchoolManagementApiApplication",
+            "env": {
+                "SPRING_PROFILES_ACTIVE": "prd",
+                "PGDATABASE": "railway",
+                "PGHOST": "postgres.railway.internal",
+                "PGPASSWORD": "XwrtHgCsbCqRezyWmSvSIgXqvfArytTs",
+                "PGPORT": "5432",
+                "PGUSER": "postgres"
+            },
+            "cwd": "${workspaceFolder}",
+            "args": ""
+        }
+    ]
+}
